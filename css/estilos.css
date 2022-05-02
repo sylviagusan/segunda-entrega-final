@@ -1,0 +1,121 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+     /* Tipografías de Google Fonts */
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    Background-image: linear-gradient(to right, #bebebe, white);
+    color: #313131;
+}
+
+.header_icon{
+    display:none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 70px;  
+}
+
+     /* Header de la web */
+.navbar-brand .header-logo {
+    width: 20%;
+    padding-left: 20px;
+    Transition: height 2s ease;
+}
+
+.header-logo:hover {
+width: 22%;
+}
+
+.header-nav {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 25px;
+    font-size: 12px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header nav li {
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.nav-item {
+    padding-right:17px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: black;
+    font-weight: 900;
+}
+
+.grainy-gradient-intro:before {
+    background: #c3ccea;
+    filter: url(#f);
+  }
+  .grainy-gradient-intro:before, .grainy-gradient-intro:after {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    --grad: radial-gradient(at 50%, red, rgba(255, 0, 0, 0.3) 55%, transparent 80%);
+    --mask: var(--grad), var(--grad);
+    -webkit-mask: var(--mask);
+    -webkit-mask-composite: source-in;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    -webkit-mask-composite: source-in, xor;
+    mask-composite: intersect;
+    mix-blend-mode: unset;
+    content: "";
+}
+
+.grainy-gradient-intro:after {
+background: linear-gradient(
+90deg, #760dfe 20%, #f51b26, #fd9900);
+}
+
+.grainy-gradient-intro:hover {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
+
+img:hover {
+    filter: opacity(2.5);
+    filter: blur(1px);
+    border: 5px solid #ccc;
+    -webkit-transform: rotate(-2deg);
+}
